@@ -1,6 +1,40 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Prata", serif;
+    width: 100%;
 }
 
+/** pdl: 163px **/
+
+.header {
+    position: fixed;
+    background-color: #222;
+    width: 100vw;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 783px;
+}
+
+.header__logo {
+    height: 58px;
+}
+
+.header__nav {
+    display: flex;
+    gap: 29px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-style: italic;
+    text-wrap: nowrap;
+}
