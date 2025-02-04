@@ -3,6 +3,12 @@
     padding: 0;
     font-family: "Prata", serif;
     width: 100%;
+    color: #fff;
+    line-height: 120%;
+}
+
+::-webkit-scrollbar {
+    width: 0;
 }
 
 /** pdl: 163px **/
@@ -10,8 +16,7 @@
 .header {
     position: fixed;
     background-color: #222;
-    width: 100vw;
-}
+    }
 
 .header__wrapper {
     display: flex;
@@ -37,4 +42,90 @@
     font-family: Arial;
     font-style: italic;
     text-wrap: nowrap;
+    font-size: 16px;
+}
+
+.main {
+    width: 100vw;
+}
+
+.main__basic {
+    padding-left: 163px;
+    background-image: url("./public/first.JPG");
+    background-size: 763px 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: calc(100% - 163px);
+}
+
+.basic__content {
+    padding-top: 118px;
+    max-width: 417px;
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+}
+
+.basic__wrapper {
+    background-color: #222;
+    width: 100vw;
+}
+
+.basic__title {
+    font-size: 80px;
+    padding-bottom: 50px;
+}
+
+.basic__lead {
+    font-family: Arial;
+    padding-bottom: 64px;
+}
+
+.basic__checkmark {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding-bottom: 40px;
+}
+
+.basic__checkmark_img {
+    height: 37px;
+    width: auto;
+}
+
+.basic__point {
+    font-family: Arial;
+    line-height: 110%;
+    font-size: 24px;
+}
+
+.basic__span {
+    font-family: "Prata";
+    line-height: 150%;
+    font-size: 40px;
+}
+
+.basic__img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    max-width: 763px;
+    
+}
+
+.button {
+    color: #222;
+    font-family: Arial;
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+}
+
+.basic__button {
+    margin-bottom: 50px;
+    width: 191px;
+    height: 96px;
 }
