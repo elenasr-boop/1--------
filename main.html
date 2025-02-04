@@ -4,11 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"></link>
-    <title>Lorem</title>
+    <title>Bookclub</title>
 </head>
 <body>
-    <header class="header">Header</header>
-    <main class="main">Main</main>
-    <footer class="footer">Footer</footer>
+    <header class="header">
+        <img src="./public/logo.svg" class="header__logo" alt="Bookclub">
+        <nav class="header__nav">
+            <a href="#" class="">About us</a>
+            <a href="#">Blog</a>
+            <a href="#">Book of the month</a>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="main__basic">
+            <h1 class="basic__title"></h1>
+            <p class="basic__lead"></p>
+            <div class="basic__checkmarks">
+                <div class="basic__checkmark">
+                    <img src="./public/checkmark.png" class="basic__checkmark_img" alt="Checkmark">
+                    <p class="basic__point"></p>
+                </div>
+                <div class="basic__checkmark">
+                    <img src="./public/checkmark.png" class="basic__checkmark_img" alt="Checkmark">
+                    <p class="basic__point"></p>
+                </div>
+                <div class="basic__checkmark">
+                    <img src="./public/checkmark.png" class="basic__checkmark_img" alt="Checkmark">
+                    <p class="basic__point"></p>                    
+                </div>
+            </div>
+            <img src="./public/first.JPG" class="basic_img" alt="home library">
+        </section>
+        <section class="main__points">
+            <img src="./public/second.JPG" class="points__img" alt="readers">
+            <div class="points__content">
+                <div class="points__point">
+                    <img src="./public/symbol.png" alt="" class="points__point_img">
+                    <p class="points__text"></p>
+                </div>
+                <div class="points__point">
+                    <img src="./public/symbol.png" alt="" class="points__point_img">
+                    <p class="points__text"></p>
+                </div>
+                <div class="points__point">
+                    <img src="./public/symbol.png" alt="" class="points__point_img">
+                    <p class="points__text"></p>
+                </div>
+                <div class="points__point">
+                    <img src="./public/symbol.png" alt="" class="points__point_img">
+                    <p class="points__text"></p>
+                </div>
+                <button class="points__button">Order</button>
+            </div>
+            <img src="./public/third.JPG" class="points__img" alt="library">
+        </section>
+        <section class="main__form">
+            <h2 class="form__caption"></h2>
+            <form class="form">
+                <label for="name">
+                    <input type="text" id="name" class="form__input" placeholder="Name">
+                </label>
+                <label for="email">
+                    <input type="email" id="email" class="form__input" placeholder="E-mail">
+                </label>
+                <label for="checkbox">
+                    <img src="" alt="Agreement" class="form__checkbox">
+                    <input type="checkbox">
+                    I accept a <a href="#" class="form__link">Privacy policy</a>
+                </label>
+                <button class="form__submit_btn">Submit form</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__links">
+            <a href="#" class="footer__link">About us</a>
+            <a href="#" class="footer__link">Blog</a>
+            <a href="#" class="footer__link">Book of the month</a>
+        </section>
+        <section class="footer__content">
+            <img class="footer__logo" src="./public/logo.svg" alt="Bookclub">
+            <div class="footer__socials">
+                <img src="./public/icon_inst.svg" alt="Instagram" class="footer__social">
+                <img src="./public/icon_tiktok.svg" alt="Tiktok" class="footer__social">
+                <img src="./public/icon_linkedIn.svg" alt="LinkedIn" class="footer__social">
+                <img src="./public/icon_facebook.svg" alt="Facebook" class="footer__social">
+                <img src="./public/icon_tg.svg" alt="Telegram" class="footer__social">
+                <img src="./public/icon_youtube.svg" alt="Youtube" class="footer__social">
+            </div>
+            <div class="footer__button">
+                <button class="footer__btn">Order</button>
+            </div>
+            <div class="footer__copyright">© 2025, Copyright.</div>
+            <div class="footer__privacy">Privacy policy</div>
+            <div class="footer__terms">Terms of Use</div>
+        </section>
+    </footer>
 </body>
 </html>
