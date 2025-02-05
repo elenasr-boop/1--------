@@ -12,6 +12,10 @@
     --distance-between-blocks: 100px;
 }
 
+:root {
+    --opacity: 0;
+}
+
 ::-webkit-scrollbar {
     width: 0;
 }
@@ -20,8 +24,13 @@
 
 .header {
     position: fixed;
-    background-color: #222;
-    }
+    background-color: rgba(34, 34, 34, var(--opacity));
+    transition: all .3s;
+}
+
+.header:hover {
+    background-color: rgba(34, 34, 34, 1);
+}
 
 .header__wrapper {
     display: flex;
@@ -243,6 +252,16 @@ a:hover {
     font-family: Arial;
     font-size: var(--text-normal);
     line-height: 150%;
+    color: #000;
+}
+
+.form__input.error {
+    background-color: rgba(255, 0, 0, .5);
+    color: #fff;
+}
+
+.form__input.error::placeholder {
+    color: #fff;
 }
 
 .form__checkbox_input {

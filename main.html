@@ -10,7 +10,7 @@
     <title>Bookclub</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__wrapper">
             <img src="./public/logo.svg" class="header__logo" alt="Bookclub">
             <nav class="header__nav">
@@ -40,7 +40,9 @@
                             <span class="basic__point">Surprise every <span class="basic__span">month</span></span>                    
                         </div>
                     </div>
-                    <button class="basic__button button">ORDER</button>
+                    <a href="#form">
+                        <button class="basic__button button">ORDER</button>
+                    </a>
                 </div>
             </section>
         </div>
@@ -63,25 +65,27 @@
                     <img src="./public/symbol.png" alt="" class="points__point_img">
                     <p class="points__text">No more spending hours searching for a new book. Now we do it for you.</p>
                 </div>
-                <button class="points__button button">Order</button>
+                <a href="#form">
+                    <button class="points__button button">Order</button>
+                </a>
             </div>
         </section>
-        <section class="main__form">
+        <section class="main__form" id="form">
             <div class="form__wrapper">
                 <div class="form__wrap">
                     <h2 class="form__caption">Let's try our service</h2>
                     <form class="form">
                         <label for="name">
-                            <input type="text" id="name" class="form__input" placeholder="Name">
+                            <input type="text" id="name" class="form__input" placeholder="Name" value="">
                         </label>
                         <label for="email">
-                            <input type="email" id="email" class="form__input" placeholder="E-mail">
+                            <input type="email" id="email" class="form__input" placeholder="E-mail" value="">
                         </label>
-                        <label for="checkbox" class="form__checkbox">
-                            <input type="checkbox" class="form__checkbox_input">
-                            <p class="form__agreement"><img src="./public/checkbox.png" alt="Agreement" class="form__checkbox_img"> I accept a <a href="#" class="form__link">Privacy policy</a></p>
+                        <label for="agreement" class="form__checkbox">
+                            <input type="checkbox" id="agreement" class="form__checkbox_input">
+                            <p class="form__agreement"><img src="./public/checkbox_false.png" alt="Agreement" class="form__checkbox_img" id="agree-img"> I accept a <a href="#" class="form__link">Privacy policy</a></p>
                         </label>
-                        <button class="form__submit_btn button">SUBMIT FORM</button>
+                        <button class="form__submit_btn button" id="submit-button">SUBMIT FORM</button>
                     </form>
                 </div>
             </div>
@@ -103,12 +107,14 @@
                 <img src="./public/icon_tg.svg" alt="Telegram" class="footer__social">
                 <img src="./public/icon_youtube.svg" alt="Youtube" class="footer__social">
             </div>
+            <a href="#form">
                 <button class="footer__btn button">ORDER</button>
-            
+            </a>
             <p class="footer__copyright">© 2025, Copyright.</p>
             <p class="footer__privacy">Privacy policy</p>
             <p class="footer__terms">Terms of Use</p>
         </section>
     </footer>
+    <script src="./main.js"></script>
 </body>
 </html>
