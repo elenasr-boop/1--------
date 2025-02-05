@@ -129,3 +129,57 @@
     width: 191px;
     height: 96px;
 }
+
+.stub {
+    height: 100px;
+    width: 100vw;
+    background-color: #282829;
+}
+
+.main__points {
+    background-color: #282829;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-image: url("./public/second.JPG"), url("./public/third.JPG");
+    background-position: left, right;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.points__content {
+    padding-left: 53px;
+    padding-right: 53px;
+    background-color: #282829;
+    max-width: max-content;
+}
+
+.points__point {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 614px;
+    border-bottom: 1px solid #55565A;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.points__point:nth-child(4) {
+    border-bottom: 0;
+}
+
+.points__point_img {
+    width: 58px;
+    height: 47px;
+}
+
+.points__text {
+    font-family: Arial;
+    font-size: 24px;
+    line-height: 140%;
+}
+
+.points__button {
+    max-width: 614px;
+    height: 78px;
+}
