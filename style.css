@@ -5,6 +5,7 @@
     width: 100%;
     color: #fff;
     line-height: 120%;
+    box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -182,4 +183,84 @@
 .points__button {
     max-width: 614px;
     height: 78px;
+}
+
+.main__form {
+    background-color: #282829;
+    display: flex;
+    justify-content: center;
+    padding: 100px 163px 100px 163px;
+}
+
+.form__wrapper {
+    background-color: #fff;
+    border: 2px solid #D6D6D6;
+    border-radius: 30px;
+    background-image: url("./public/registration.JPG");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.form__wrap {
+    margin: 70px 0px 70px 132px;
+    max-width: 781px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.form__caption {
+    font-size: 54px;
+    line-height: 110%;
+    color: #000;
+    padding-bottom: 45px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.form__input {
+    height: 65px;
+    padding-left: 40px;
+    border: 2px solid #D6D6D6;
+    border-radius: 4px;
+    font-family: Arial;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.form__checkbox_input {
+    display: none;
+}
+
+.form__agreement {
+    color: #000;
+    font-family: Arial;
+    font-size: 19px;
+    line-height: 130%;
+    text-wrap: nowrap;
+}
+
+.form__checkbox_img {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+.form__link {
+    text-decoration: none;
+    color: #000;
+    font-family: Arial;
+}
+
+.form__submit_btn {
+    color: #fff;
+    background-color: #282829;
+    border: none;
+    border-radius: 4px;
+    height: 100px;
+    font-family: Arial;
+    font-size: 24px;
+    line-height: 150%;
 }
