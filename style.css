@@ -52,10 +52,6 @@
 
 .main__basic {
     padding-left: 163px;
-    background-image: url("./public/first.JPG");
-    background-size: 763px 100%;
-    background-repeat: no-repeat;
-    background-position: right;
     width: calc(100% - 163px);
 }
 
@@ -70,6 +66,10 @@
 .basic__wrapper {
     background-color: #222;
     width: 100vw;
+    background-image: url("./public/first.JPG");
+    background-size: 763px 100%;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .basic__title {
@@ -123,6 +123,16 @@
     font-weight: bold;
     border: none;
     border-radius: 4px;
+    transition: ease-in all 0.5s;
+}
+
+.button:hover {
+    background-color: #D5C9BE;
+    transform: scale(1.1);
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .basic__button {
@@ -204,7 +214,6 @@
 .form__wrap {
     margin: 70px 0px 70px 132px;
     max-width: 781px;
-    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .form__caption {
@@ -263,4 +272,73 @@
     font-family: Arial;
     font-size: 24px;
     line-height: 150%;
+    font-weight: normal;
+}
+
+.footer {
+    width: 100vw;
+    background-color: #222222;
+}
+
+.footer__links {
+    border-bottom: 2px solid #D5C9BE;
+    border-top: 2px solid #D5C9BE;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.footer__link {
+    text-decoration: none;
+    width: auto;
+}
+
+.footer__content {
+    padding: 40px 163px 60px 163px;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    row-gap: 33px;
+    align-items: center;
+}
+
+.footer__logo {
+    height: 53px;
+    width: auto;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.footer__social {
+    width: 32px;
+    height: 32px;
+}
+
+.footer__btn {
+    height: 78px;
+    max-width: 180px;
+    justify-self: end;
+}
+
+.footer__privacy {
+    text-align: center;
+}
+
+.footer__terms {
+    text-align: end;
+}
+
+.footer__copyright, .footer__privacy, .footer__terms {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 150%;
+}
+
+.footer__privacy, .footer__terms {
+    color: #D5C9BE;
 }
